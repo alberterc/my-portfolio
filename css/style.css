@@ -32,6 +32,18 @@ body {
     line-height: 1.2;
 }
 
+.page-button {
+    color: var(--bs-gray-300);
+    max-width: 8em;
+    margin-top: 100px;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+.page-button:hover {
+    background-color: var(--bs-red);
+}
+
 .rounded-corner {
     border-radius: 25px;
 }
