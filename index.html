@@ -74,35 +74,58 @@
                     </div>
 
                     <!-- Home -->
-                    <div class="tab-pane fade show active h-100" id="home" role="tabpanel" tabindex="0">
-                        
+                    <div class="tab-pane fade show active h-100" id="home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                         <div class="content-container d-flex w-100 h-100 p-3 mx-auto flex-column">
                             <!-- <header class="">
                                 <span class="float-md-start fs-2">Home</span>
                             </header> -->
                             <main class="px-3 text-center my-auto">
                                 <div class="d-flex flex-column lg-text">
-                                    <p class="rounded-corner p-3" style="background-color: var(--bs-gray-900);">
+                                    <p class="rounded-corner p-3 my-3 fw-semibold" style="background-color: var(--bs-gray-900);">
                                         <span id="greet-text"></span>
                                     </p>
-                                    <span>My name is Albert.</span>
+                                    <figure class="text-end lead">
+                                        <blockquote class="blockquote my-2">
+                                            <span class="display-2">My name is Albert</span>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer my-1">
+                                            <span class="fs-3">Developer & Tech Enthusiast</span>
+                                        </figcaption>
+                                    </figure>
+                                    <div>
+                                        <a class="btn btn-lg btn-dark page-button nextNav">Who Am I?</a>
+                                    </div>
                                 </div>
                             </main>
                         </div>
         
                     </div>
                     <!-- About -->
-                    <div class="tab-pane fade h-100" id="about" role="tabpanel" tabindex="0">
-                        <div class="d-flex w-100 h-100 flex-column text-start">
-                            <span class="display-2">Albert Enrico</span>
+                    <div class="tab-pane fade h-100" id="about" role="tabpanel" aria-labelledby="pills-about-tab" tabindex="0">
+                        <div class="content-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                            <main class="px-3 text-center my-auto">
+                                <span class="display-2">Albert Enrico</span>
+
+                                <div>
+                                    <a class="btn btn-lg btn-dark page-button nextNav">Skills</a>
+                                </div>
+                            </main>
                         </div>
                     </div>
                     <!-- Skills -->
-                    <div class="tab-pane fade h-100" id="skills" role="tabpanel" tabindex="0">SKILLS</div>
+                    <div class="tab-pane fade h-100" id="skills" role="tabpanel" aria-labelledby="pills-skills-tab" tabindex="0">
+                        <div>
+                            <a class="btn btn-lg btn-dark page-button nextNav">Projects</a>
+                        </div>
+                    </div>
                     <!-- Projects -->
-                    <div class="tab-pane fade h-100" id="projects" role="tabpanel" tabindex="0">projects</div>
+                    <div class="tab-pane fade h-100" id="projects" role="tabpanel" aria-labelledby="pills-projects-tab" tabindex="0">
+                        <div>
+                            <a class="btn btn-lg btn-dark page-button nextNav">Contacts</a>
+                        </div>
+                    </div>
                     <!-- Contacts -->
-                    <div class="tab-pane fade h-100" id="contacts" role="tabpanel" tabindex="0">contacts</div>
+                    <div class="tab-pane fade h-100" id="contacts" role="tabpanel" aria-labelledby="pills-contacts-tab" tabindex="0">contacts</div>
                 
                     
                 </div>
