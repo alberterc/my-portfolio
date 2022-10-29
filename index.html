@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- DevIcon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
         <!-- Local Files -->
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/bg.css">
@@ -75,24 +77,24 @@
 
                     <!-- Home -->
                     <div class="tab-pane fade show active h-100" id="home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                        <div class="content-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                        <div class="md-container d-flex w-100 h-100 p-3 mx-auto flex-column">
                             <!-- <header class="">
                                 <span class="float-md-start fs-2">Home</span>
                             </header> -->
                             <main class="px-3 text-center my-auto">
                                 <div class="d-flex flex-column lg-text">
                                     <p class="rounded-corner p-3 my-3 fw-semibold" style="background-color: var(--bs-gray-900);">
-                                        <span id="greet-text"></span>
+                                        <span class="red-text" id="greet-text"></span>
                                     </p>
                                     <figure class="text-end lead">
                                         <blockquote class="blockquote my-2">
                                             <span class="display-2">My name is Albert</span>
                                         </blockquote>
                                         <figcaption class="blockquote-footer my-1">
-                                            <span class="fs-3">Developer & Tech Enthusiast</span>
+                                            <span class="fs-3">Solver. Designer. Developer.</span>
                                         </figcaption>
                                     </figure>
-                                    <div>
+                                    <div style="margin-top: 100px;">
                                         <a class="btn btn-lg btn-dark page-button nextNav">Who Am I?</a>
                                     </div>
                                 </div>
@@ -102,20 +104,227 @@
                     </div>
                     <!-- About -->
                     <div class="tab-pane fade h-100" id="about" role="tabpanel" aria-labelledby="pills-about-tab" tabindex="0">
-                        <div class="content-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-                            <main class="px-3 text-center my-auto">
-                                <span class="display-2">Albert Enrico</span>
+                        <div class="lg-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                            <div class="row my-auto mx-5 text-center">
+                                <!-- left/top content -->
+                                <section class="col-lg-6 col-12 my-auto">
+                                    <figure class="my-5">
+                                        <!-- <img src="./assets/img/foto.jpg" class="figure-img img-thumbnail small-img"> -->
+                                    </figure>
+                                </section>
+                                <!-- right/bottom content -->
+                                <section class="col-lg-6 col-12 text-start">
+                                    <!-- typing title -->
+                                    <span class="display-2">
+                                        <p style="background-color: var(--bs-gray-900);" class="rounded-corner p-3 fw-bold">
+                                            <span id="who-am-i-text" class="red-text"></span>
+                                        </p>
+                                    </span>
+                                    <!-- bio text -->
+                                    <p class="fs-3 fw-semibold border-bottom pb-2 mt-5"><i>Born</i> in 2002. <i>Working hard</i> since 2020.</p>
+                                    <p style="font-size: 1.13em;" class="ms-3 lead">
+                                        I'm <span class="fw-semibold">Albert Enrico</span>, an undergraduate student currently studying
+                                        <span class="fw-semibold">Computer Science</span>  at Binus University for 2 years. I'm passionate on
+                                        developing applications to <span class="fw-semibold">fulfill user needs</span> that can be used 
+                                        <span class="fw-semibold">anywhere and anytime</span> with ease.
+                                        <br>
+                                        <br>
+                                        Have experiences and proficient in
+                                        <span class="fw-semibold">Software Engineering</span>,
+                                        <span class="fw-semibold">Android Development</span>,
+                                        <span class="fw-semibold">Internet of Things</span>,
+                                        and anything tech related.
+                                        Currently dipping my toes in
+                                        <span class="fw-semibold">Web Development</span>,
+                                        <span class="fw-semibold">UI/UX Design</span>,
+                                        <span class="fw-semibold">Embedded Systems</span>,
+                                        and <span class="fw-semibold">Ubuntu</span>
+                                        <br>
+                                        <br>
+                                        I enjoy listening to <span class="fw-semibold">music</span>,
+                                        playing <span class="fw-semibold">video games</span>, 
+                                        and being <span class="fw-semibold">productive</span>. 
+                                        Anything <i>anime</i> or <span class="fw-semibold">Japanese</span> related are my interests.
+                                        Nowadays, I have a hobby on learning other languages until I can speak and understand basics.
+                                    </p>
+                                </section>
 
-                                <div>
-                                    <a class="btn btn-lg btn-dark page-button nextNav">Skills</a>
+                                <div style="margin-top: 100px;" class="text-center mb-3">
+                                    <p class="text-muted">Wow! A whole page just about me!</p>
+                                    <a class="btn btn-lg btn-dark page-button nextNav">I have a knack for...</a>
                                 </div>
-                            </main>
+                            </div>
                         </div>
                     </div>
                     <!-- Skills -->
                     <div class="tab-pane fade h-100" id="skills" role="tabpanel" aria-labelledby="pills-skills-tab" tabindex="0">
-                        <div>
-                            <a class="btn btn-lg btn-dark page-button nextNav">Projects</a>
+                        <div class="d-flex w-100 h-100 p-3 flex-column">
+                            <div class="my-auto text-center">
+                                <div class="row">
+                                    <!-- left/top content -->
+                                    <section id="left-skill-container" class="skill-container col-sm-4 col-12 my-auto skill-img">
+                                        <p class="display-6 my-3">
+                                            <span>Programming</span>
+                                        </p>
+                                        <div style="border-color: var(--bs-red) !important" class="border"></div>
+                                        <div class="row my-3">
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+                                            </div>
+                                        </div>
+                                        <div class="row my-5">
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                            </div>
+                                        </div>
+                                        <div class="row my-5">
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="./assets/brands/google-material-design-icon.svg"/>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5 mb-4">
+                                            <div class="col">
+                                                <img src="./assets/brands/jetpack-compose-icon.png"/>
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img class="invert-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" />
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5 mb-4">
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- middle content -->
+                                    <section class="skill-container col-sm-4 col-12 my-auto skill-img">
+                                        <p class="display-6 my-3">
+                                            <span>Tools</span>
+                                        </p>
+                                        <div style="border-color: var(--bs-red) !important" class="border"></div>
+                                        <div class="row my-3">
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                                            </div>
+                                        </div>
+                                        <div class="row my-5">
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img class="invert-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" />
+                                            </div>
+                                        </div>
+                                        <div class="row my-5">
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5 mb-4">
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain.svg" />
+                                            </div>
+                                            <div class="col">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" />
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- right/bottom content -->
+                                    <section class="skill-container col-sm-4 col-12 my-auto skill-img">
+                                        <p class="display-6 my-3">
+                                            <span>Other</span>
+                                        </p>
+                                        <div style="border-color: var(--bs-red) !important" class="border"></div>
+                                        <div class="my-3">
+                                            <div class="row my-3">
+                                                <div class="col-sm-6 col-12 my-auto">
+                                                    <span class="lead">Image Editing</span>
+                                                </div>
+                                                <div class="col-sm-6 col-12">
+                                                    <span class="lead">Adobe Photoshop, CorelDRAW, Canva</span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-5">
+                                                <div class="col-sm-6 col-12 my-auto">
+                                                    <span class="lead">Video Editing</span>
+                                                </div>
+                                                <div class="col-sm-6 col-12">
+                                                    <span class="lead">Adobe Premiere Pro, Adobe After Effects</span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-5">
+                                                <div class="col-sm-12 col-12 my-auto">
+                                                    <span class="lead">Competed in Competitive Programming for 2 years</span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-5">
+                                                <div class="col-sm-12 col-12 my-auto">
+                                                    <span class="lead">Competed in Artificial Intelligence and Machine <br>Learning with Computer Vision</span>
+                                                </div>
+                                            </div>
+                                            <div class="row my-5">
+                                                <div class="col-sm-12 col-12 my-auto">
+                                                    <span class="lead">Playing with Computer Hardwares</span>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-5 mb-4"">
+                                                <div class="col-sm-12 col-12 my-auto">
+                                                    <span class="lead">Semi-Professional Video Gaming with a Team</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="text-end mb-3 fixed-buttom">
+                                <p class="text-muted">Click skill section to toggle expand ;)</p>
+                                <a class="btn btn-lg btn-dark page-button nextNav">What I've made</a>
+                            </div>
                         </div>
                     </div>
                     <!-- Projects -->
