@@ -27,6 +27,15 @@ contactsPillsTab.on('click', function(e) {
 
 navControls()
 
+$('.skill-container').on('click', function() {
+    if ($(this).hasClass('toggle-skill-container')) {
+        $(this).removeClass('toggle-skill-container')
+    }
+    else {
+        $(this).addClass('toggle-skill-container')
+    }
+})
+
 function navControls() {
     var i, items = $('.nav-link'), pane = $('.tab-pane')
     // Next
