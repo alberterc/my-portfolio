@@ -79,3 +79,22 @@ function navControls() {
         }
     });
 }
+
+navbar_autohide = $('.autohide');
+// add padding-top to bady (if necessary)
+navbar_height = document.querySelector('.project-navbar').offsetHeight;
+document.body.style.paddingTop = navbar_height + 'px';
+
+var last_scroll_top = 0;
+    window.addEventListener('scroll', function() {
+        let scroll_top = window.scrollY;
+        if(scroll_top < last_scroll_top) {
+            navbar_autohide.removeClass('scrolled-down');
+            navbar_autohide.addClass('scrolled-up');
+        }
+        else {
+            navbar_autohide.removeClass('scrolled-up');
+            navbar_autohide.addClass('scrolled-down');
+        }
+        last_scroll_top = scroll_top;
+    }); 
