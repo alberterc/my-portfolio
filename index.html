@@ -322,21 +322,204 @@
                                 </div>
                             </div>
                             <div class="text-end mb-3 fixed-buttom">
-                                <p class="text-muted">Click skill section to toggle expand ;)</p>
+                                <p class="text-muted">Click to toggle<br>Hover to expand ;)</p>
                                 <a class="btn btn-lg btn-dark page-button nextNav">What I've made</a>
                             </div>
                         </div>
                     </div>
                     <!-- Projects -->
                     <div class="tab-pane fade h-100" id="projects" role="tabpanel" aria-labelledby="pills-projects-tab" tabindex="0">
-                        <div>
-                            <a class="btn btn-lg btn-dark page-button nextNav">Contacts</a>
+                        <div class="d-flex w-100 h-100 p-3 flex-column">
+                            <nav class="autohide sticky-top project-navbar navbar navbar-expand-lg" style="background-color: transparant; border-bottom: 1px solid rgba(255, 255, 255, 0.18);">
+                                <div class="container-fluid">
+                                    <!-- <a class="navbar-brand" href="#"></a> -->
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-projects" aria-controls="navbar-projects" aria-expanded="true" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbar-projects">
+                                        <div class="navbar-nav">
+                                            <a style="color: var(--bs-gray-300);" class="btn nav-link" href="#android-projects">Android</a>
+                                            <a style="color: var(--bs-gray-300);" class="btn nav-link" href="#dekstop-projects">Dekstop</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a class="btn btn-lg btn-dark page-button nextNav">Contact Me</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <!-- Navbar content -->
+                            <div class="my-auto container-fluid mt-5" id="android-projects">
+                                <p class="fs-3 text-center mb-4">Android</p>
+                                <div class="skill-content row">
+                                    <div class="col-sm-4 col-12 mb-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="./assets/img/projects/ankunv2.png" alt="AnKunv2">
+                                            <div class="card-body text-start">
+                                                <h3 class="card-title">AnKunv2</h5>
+                                                <span class="card-subtitle text-muted pe-2">
+                                                    <li class="las la-calendar la-lg"></li>
+                                                    Oct 2022
+                                                </span>
+                                                <span class="card-subtitle text-muted pe-2">
+                                                    <i class="las la-clock la-lg"></i>
+                                                    3 Weeks
+                                                </span>
+                                                <span class="card-subtitle text-muted">
+                                                    <i class="las la-user la-lg"></i>
+                                                    Alone
+                                                </span>
+                                                <hr>
+                                                <p class="card-text text-muted fw-semibold">
+                                                    AnKunv2 is an Android application built with Jetpack Compose to stream anime on demand. This app was built 
+                                                    for educational purposes where I learn how to use the Jetpack Compose framework.
+                                                </p>
+                                                <span class="text-badge px-2 py-1" style="background-color: blue;">Kotlin</span>
+                                                <span class="text-badge px-2 py-1" style="background-color: rgb(55, 124, 55);">Jetpack Compose</span>
+                                                <a style="color: var(--bs-gray-300);" href="https://github.com/RadXGH/AnKunv2" class="btn btn-dark w-100 mt-3">
+                                                    <i class="las la-code"></i>
+                                                    View Code
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-12 mb-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="./assets/img/projects/gamerguides.png" alt="AnKunv2">
+                                            <div class="card-body text-start">
+                                                <h3 class="card-title">GamerGuides</h5>
+                                                <span class="card-subtitle text-muted pe-2">
+                                                    <li class="las la-calendar la-lg"></li>
+                                                    Jun 2022
+                                                </span>
+                                                <span class="card-subtitle text-muted pe-2">
+                                                    <i class="las la-clock la-lg"></i>
+                                                    4 Months
+                                                </span>
+                                                <span class="card-subtitle text-muted">
+                                                    <i class="las la-user la-lg"></i>
+                                                    5 People
+                                                </span>
+                                                <hr>
+                                                <p class="card-text text-muted fw-semibold">
+                                                    A course providing application for gamers who want to improve their skills in playing games. 
+                                                    This application contains a collection of video tutorials uploaded by players who 
+                                                    want to give tips or tricks in playing games, making it easier for other players to improve in their games.
+                                                    First app that I built using Kotlin (for university project).
+                                                </p>
+                                                <span class="text-badge px-2 py-1" style="background-color: blue;">Kotlin</span>
+                                                <a style="color: var(--bs-gray-300);" href="https://github.com/RadXGH/moop-finalproject-gamerguides" class="btn btn-dark w-100 mt-3">
+                                                    <i class="las la-code"></i>
+                                                    View Code
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-12 mb-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="./assets/img/projects/chatup.png" alt="AnKunv2">
+                                            <div class="card-body text-start">
+                                                <h3 class="card-title">ChatUp</h5>
+                                                <span class="card-subtitle text-muted pe-2">
+                                                    <li class="las la-calendar la-lg"></li>
+                                                    Jun 2022
+                                                </span>
+                                                <span class="card-subtitle text-muted pe-2">
+                                                    <i class="las la-clock la-lg"></i>
+                                                    3 Months
+                                                </span>
+                                                <span class="card-subtitle text-muted">
+                                                    <i class="las la-user la-lg"></i>
+                                                    Alone
+                                                </span>
+                                                <hr>
+                                                <p class="card-text text-muted fw-semibold">
+                                                    A simple Firebase-based Android chat app. This chat app is similar to a forum where everyone who has an 
+                                                    account and access to the app can chat in the chat section. ChatUp is an app which I built to learn 
+                                                    Firebase Storage and Firebase Realtime Database.
+                                                </p>
+                                                <span class="text-badge px-2 py-1" style="background-color: blue;">Kotlin</span>
+                                                <a style="color: var(--bs-gray-300);" href="https://github.com/RadXGH/android-app-chatup" class="btn btn-dark w-100 mt-3">
+                                                    <i class="las la-code"></i>
+                                                    View Code
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="my-auto container-fluid mt-5" id="dekstop-projects">
+                                <p class="fs-3 text-center mb-4">Dekstop</p>
+                                <div class="skill-content row">
+                                    <div class="col-sm-4 col-12 mb-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="./assets/img/projects/smartcctv-univproj.png" alt="AnKunv2">
+                                            <div class="card-body text-start">
+                                                <h3 class="card-title">Smart CCTV</h5>
+                                                <span class="card-subtitle text-muted pe-2">
+                                                    <li class="las la-calendar la-lg"></li>
+                                                    Jan 2022
+                                                </span>
+                                                <span class="card-subtitle text-muted pe-2">
+                                                    <i class="las la-clock la-lg"></i>
+                                                    1 Week
+                                                </span>
+                                                <span class="card-subtitle text-muted">
+                                                    <i class="las la-user la-lg"></i>
+                                                    Alone
+                                                </span>
+                                                <hr>
+                                                <p class="card-text text-muted fw-semibold">
+                                                    CCTV with face detection program using simple webcam (can also be used for raspberry pi 
+                                                    cameras although needs some adjustments). It uses the "face_recognition" library.
+                                                    Built to learn the basics of computer vision and artificial intelligence (for university project).
+                                                </p>
+                                                <span class="text-badge px-2 py-1" style="background-color: rgb(1, 66, 151);">Python</span>
+                                                <a style="color: var(--bs-gray-300);" href="https://github.com/RadXGH/smart-cctv-univ-proj" class="btn btn-dark w-100 mt-3">
+                                                    <i class="las la-code"></i>
+                                                    View Code
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-12 mb-3">
+                                        <div class="card">
+                                            <img class="card-img-top" src="./assets/img/projects/cursoreyetracking.jpg" alt="AnKunv2">
+                                            <div class="card-body text-start">
+                                                <h3 class="card-title">Cursor Eye Tracking</h5>
+                                                <span class="card-subtitle text-muted pe-2">
+                                                    <li class="las la-calendar la-lg"></li>
+                                                    Jun 2021
+                                                </span>
+                                                <span class="card-subtitle text-muted pe-2">
+                                                    <i class="las la-clock la-lg"></i>
+                                                    2 Weeks
+                                                </span>
+                                                <span class="card-subtitle text-muted">
+                                                    <i class="las la-user la-lg"></i>
+                                                    Alone
+                                                </span>
+                                                <hr>
+                                                <p class="card-text text-muted fw-semibold">
+                                                    A program to control the cursor of a computer with tracking a person's face using a normal webcam.
+                                                    It uses the face recognition classifier (haarcascade_frontalface_default.xml) provided. 
+                                                    Program doesn't work with multiple faces in 1 frame. For each frame, 
+                                                    the program moves the cursor accordingly by adding a few pixels into it's current position.
+                                                </p>
+                                                <span class="text-badge px-2 py-1" style="background-color: rgb(1, 66, 151);">Python</span>
+                                                <a style="color: var(--bs-gray-300);" href="https://github.com/RadXGH/cursorFaceTracking" class="btn btn-dark w-100 mt-3">
+                                                    <i class="las la-code"></i>
+                                                    View Code
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Contacts -->
                     <div class="tab-pane fade h-100" id="contacts" role="tabpanel" aria-labelledby="pills-contacts-tab" tabindex="0">contacts</div>
-                
-                    
                 </div>
             </div>
         </div>
