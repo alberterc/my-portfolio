@@ -95,3 +95,35 @@ body {
     -webkit-filter: invert(1);
     filter: invert(1);
 }
+
+.card {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.skill-content {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.text-badge {
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: small;
+}
+
+.scrolled-down{
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
