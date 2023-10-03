@@ -1,3 +1,4 @@
+_This has not been updated, therefore all informations found here might be different from current and/or future situations_
 # my-portfolio
 My first take on making my portfolio.
 
