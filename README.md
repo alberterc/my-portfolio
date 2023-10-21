@@ -9,4 +9,4 @@ My first take on making my portfolio.
 - Bootstrap 5
 
 # Developer
-Albert E (vradnisntlong@gmail.com)
+Albert E (albertenrico.5@gmail.com)
